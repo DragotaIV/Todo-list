@@ -8,6 +8,14 @@ module.exports = {
     'react/prop-types': 0,
     'react/self-closing-comp': 0,
     'react/display-name': 0,
+    'no-shadow': "off",
+    'jsx-a11y/label-has-associated-control': [
+      2,
+      {
+        assert: 'either', // either check for `htmlFor` or `nesting`
+      },
+    ],
+
 
     // JavaScript
     semi: 0,
@@ -20,9 +28,14 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/ban-types': 0,
     '@typescript-eslint/semi': ['error'],
+    "@typescript-eslint/no-shadow": 'warn',
   },
   parser: '@typescript-eslint/parser',
   plugins: [
     '@typescript-eslint',
   ],
-};
+
+
+
+}
+
